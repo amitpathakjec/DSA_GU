@@ -1,0 +1,60 @@
+////// sum of natural numbers
+public class Sumofnaturalnum{
+    public static int recursivesum(int num){
+      if(num==1){
+         return 1;
+      } else{
+         return num+recursivesum(num-1);
+      }
+    }
+
+public static void main(String [] args){
+     int num = 5;
+     int sum = recursivesum(num);
+     System.out.println("sum of 5 natural numbers is : " sum);
+}
+    }
+
+
+///// factorial of a number
+public class Factorial{
+   public static int recursivefactorial(int num){
+     if(num ==0){
+        return 1;
+     } else {
+         return num*recursivefactorial(num-1);
+       }
+   }
+
+public static void main(String [] args){
+  int num =5;
+  int fact= recursivefactorial(num);
+ System.out.println("factroial of 5 is" +fact);
+}
+}
+
+
+
+//// fibonacci series of a number 
+public class Fibonacciseries{
+   public static int recurisvefibonacci(int num){
+  if( num<2){
+        return 1;
+  }else{
+        return recurisvefibonacci(num -1) + recurisvefibonacci(num -2);
+  }
+   }
+
+public static void main(String [] args){
+      int num = 10;
+      int fib = recurisvefibonacci(num);
+      System.out.println("fibonacci of 10 is" +fib);
+}
+}
+
+  
+
+
+     
+
+  
